@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: auth-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+    registry-fetch-interval-seconds: 10
+  instance:
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+server:
+  port: 8087
+leyou:
+  jwt:
+    secret: leyou@Login(Auth}*^31)&heiMa% # ��¼У�����Կ
+    pubKeyPath: D:\JAVAwork\rsa\\rsa.pub # ��Կ��ַ
+    priKeyPath: D:\JAVAwork\rsa\\rsa.pri # ˽Կ��ַ
+    expire: 30 # ����ʱ��,��λ����
+    cookieName: LY_TOKEN
